@@ -162,7 +162,6 @@ In this section, a description of the tidy data set, follows:
 
 **Table 4.** Database built from the average of mean and standard deviation measures,
              by each subject and each activity.
-
 Data Set Characteristics: | Multivariate 
 ------------------------- | ------------
 No. instances: | 180
