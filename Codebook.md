@@ -190,7 +190,7 @@ activity | Activity of daily living performed by the subject
  |   5. Standing (Freq: 30)
  |   6. Laying (Freq: 30)
 For all these 66 variables: | 
-average of each measure was computed | num: min/max values specified below.
+average of each measure | num: min/max values specified below.
 1. tbodyaccmeanx |                   min = 0.221,             max = 0.301
 2. tbodyaccmeany |                   min = -0.04,             max = -0.00
 3. tbodyaccmeanz |                   min = -0.15,             max = -0.07
