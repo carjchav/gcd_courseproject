@@ -1,10 +1,10 @@
 *********************************************************************************************
-## DATA CODEBOOK - Getting and Cleaning Data Course Project
+ ## DATA CODEBOOK - Getting and Cleaning Data Course Project
 *********************************************************************************************
 
 
 *********************************************************************************************
-### SECTION 1: DATA DESCRIPTION (taken from the features_info.txt of the original source)
+### SECTION 1: DATA DESCRIPTION
 *********************************************************************************************
 The features selected for this database come from the accelerometer and gyroscope 3-axial 
 raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) 
@@ -191,8 +191,9 @@ in, follows:
 Data Set Characteristics: | Multivariate | No. instances: | 180
 ------------------------- | ------------ | -------------- | ---
 Attribute Characteristics: | See below | No. Attributes: | 68
+-------------------------- | --------- | --------------- | --
 Associated Tasks: | Merging, Cleaning up, Averagin (as described in SECTION 2) | Missing Values: | N/A
-
+----------------- | ---------------------------------------------------------- | --------------- | ---
 
 Variable Names			Description
 ==============			===========
