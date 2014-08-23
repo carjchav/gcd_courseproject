@@ -66,11 +66,9 @@ Based on the features collected from the accelerometers from the Samsung Galaxy 
 #### 2.1 Creating one data set (using X_test/train, subject_test/train, y_test/train, and features)
 ---------------------------------------------------------------------------------------------------
 
-After setting the working directory, all the txt files were read in R (including the dataset
-for both test and training, the labels, the subjects, and the features -variables names-).
+After setting the working directory, all the txt files were read in R (including the dataset for both test and training, the labels, the subjects, and the features -variables names-).
 
-Once the files were read in, the data was merged to create one dataset. The dataset created,
-at this stage, resulted in 563 variables (columns) and 10299 instances (rows). 
+Once the files were read in, the data was merged to create one dataset. The dataset created, at this stage, resulted in 563 variables (columns) and 10299 instances (rows). 
 
 This large data set has the following format:
 
@@ -87,8 +85,7 @@ X_train.txt | subject_train.txt | y_train.txt
 #### 2.2 Labelling the data set with descriptive variable names (using features.txt file)
 -----------------------------------------------------------------------------------------
 
-The following points about text in data sets, were considered from first lecture on week 4 
-of the Getting & Cleaning Data Course:
+The following points about text in data sets, were considered from first lecture on week 4 of the Getting & Cleaning Data Course:
 
 Names of variables should be,
  - all lower case when possible
@@ -98,11 +95,9 @@ Names of variables should be,
 
 Based on this criteria for putting descriptive names to variables, the analysis performed 
 for this project consisted in,
- - Detecting and changing capital case letters (e.g. Body to body, Acc to acc, X to x, 
-   Jerk to jerk, GyroJerkMag to gyrojerkmarg, etc)
+ - Detecting and changing capital case letters (e.g. Body to body, Acc to acc, X to x, Jerk to jerk, GyroJerkMag to gyrojerkmarg, etc)
  - Detecting and removing unnecessary characters (e.g. "(", ")", "-")
- - Detecting and changing names that can cause confusion when subsetting only
-   the mean and standard deviation measures (e.g. "meanFreq" to "mfreq")
+ - Detecting and changing names that can cause confusion when subsetting only the mean and standard deviation measures (e.g. "meanFreq" to "mfreq")
 
 
 
@@ -122,12 +117,9 @@ The following labels were used for naming the activities in the data set:
 #### 2.4 Picking out the mean and standard deviation variables estimated from the signals 
 -----------------------------------------------------------------------------------------
 
-The merged data set obtained in step 1 contains, for each pattern described in SECION 1, 
-measures such as mean, standard deviation, max, min, skewness, kurtosis, and others.
+The merged data set obtained in step 1 contains, for each pattern described in SECION 1, measures such as mean, standard deviation, max, min, skewness, kurtosis, and others.
 
-In the data set obtained in this step, only the mean and standard deviation measures were
-picked out for each pattern. The data set obtained, resulted in a total of 68 variables 
-(columns) and still 10299 instances (rows).
+In the data set obtained in this step, only the mean and standard deviation measures were picked out for each pattern. The data set obtained, resulted in a total of 68 variables (columns) and still 10299 instances (rows).
 
 This data set has the following format:
 
@@ -145,12 +137,9 @@ X_train.txt | subject_train.txt | y_train.txt
 #### 2.5 Creating a data set with the average of each variable for each subject, activity
 -----------------------------------------------------------------------------------------
 
-At this step, considering the data set illustrated in Table 2, an average measure was
-obtained for the 'mean' and 'standard deviation' variables, by every subject-activity
-combination. 
+At this step, considering the data set illustrated in Table 2, an average measure was obtained for the 'mean' and 'standard deviation' variables, by every subject-activity combination. 
 
-The resulted tidy data set has 68 variables (columns), 180 instances (rows), and has
-the following format:
+The resulted tidy data set has 68 variables (columns), 180 instances (rows), and has the following format:
 
 **Table 3.** Tidy data set containing the average for the mean and
 	     standard deviation measures of each subject/activity
@@ -176,6 +165,7 @@ in, follows:
              by each subject and each activity.
 
 Data Set Characteristics: | Multivariate | No. instances: | 180
+------------------------- | ------------ | -------------- | ---
 Attribute Characteristics: | See below | No. Attributes: | 68
 Associated Tasks: | Merging, Cleaning up, Averagin (as described in SECTION 2) | Missing Values: | N/A
 
@@ -183,7 +173,7 @@ Associated Tasks: | Merging, Cleaning up, Averagin (as described in SECTION 2) |
 The variables contained in the tidy data set are the following:
 
 
-**Table 5.** Variables description
+**Table 5.** Variables description.
 
 Variable Names | Description 
 -------------- | ----------- 
@@ -197,7 +187,7 @@ activity | Activity of daily living performed by the subject
  |   4. Sitting
  |   5. Standing
  |   6. Laying
-For all these 66 variables: | num: min/max values specified below.
+For all these 66 variables: average of each measure | num: min/max values specified below.
 1. tbodyaccmeanx |                   min = 0.221,             max = 0.301
 2. tbodyaccmeany |                   min = -0.04,             max = -0.00
 3. tbodyaccmeanz |                   min = -0.15,             max = -0.07
@@ -264,5 +254,4 @@ For all these 66 variables: | num: min/max values specified below.
 64.fbodybodyaccjerkmagstd |          min = -0.99,             max = 0.316
 65.fbodybodygyromagstd |             min = -0.98,             max = 0.236
 66.fbodybodygyrojerkmagstd |         min = -0.99,             max = 0.287
-
 **Note:** Features (including standar deviation measures were normalized and bounded within [-1,1]. 
