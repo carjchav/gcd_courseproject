@@ -1,7 +1,7 @@
 *********************************************************************************************
 ## DATA CODEBOOK - Getting and Cleaning Data Course Project
-### (By: Carlos CHAVARRÍA)	
 *********************************************************************************************
+
 
 *********************************************************************************************
 ### SECTION 1: DATA DESCRIPTION (taken from the features_info.txt of the original source)
@@ -185,14 +185,12 @@ In this section, a description of the tidy data set as well as for the variables
 in, follows:
 
 
-**Table 4.** Database built from the average of mean and standard deviation measures
-             of the patterns described in SECTION 1, by each subject and activity.
+**Table 4.** Database built from the average of mean and standard deviation measures,
+             by each subject and each activity.
 
-Data Set Characteristics: | Multivariate | No. instances: 180 
+Data Set Characteristics: | Multivariate | No. instances: 180
 Attribute Characteristics: | See below | No. Attibutes:  68  
-Associated Tasks: | Merging, Cleaning up, |		       
- | Averaging (as described in | Missing values: N/A 
- | SECTION 2) |
+Associated Tasks: | Merging, Cleaning up,  Averaging (as described in SECTION 2) | Missing values: N/A 		       
 
 
 Variable Names			Description
