@@ -1,7 +1,6 @@
 ## DATA CODEBOOK 
-## HUMAN ACTIVITY RECOGNITION DATABASE
 ## Getting and Cleaning Data Course Project
-## (By: Carlos CHAVARRÍA)	
+### (By: Carlos CHAVARRÍA)	
 
 *********************************************************************************************
 ### SECTION 1: DATA DESCRIPTION (taken from the features_info.txt of the original source)
@@ -90,15 +89,18 @@ at this stage, resulted in 563 variables (columns) and 10299 instances (rows).
 This large data set has the following format:
 
 
-**Table 1.** Data set created after merging the data files.
-
-
 features.txt (all 561 variables) | subject (id: 1 to 30) | activity (values: 1 to 6)     
 
 ---------------------------------|-----------------------|--------------------------
- X_test.txt | subject_test.txt | y_test.txt  
- X_train.txt | subject_train.txt | y_train.txt  
+ |  | y_test.txt  
+ | y_train.txt  
 
+**Table 1.** Data set created after merging the data files.
+
+features.txt (all 561 variables) | subject (id: 1 to 30)
+-------------------------------- | ---------------------
+X_test.txt | subject_test.txt
+X_train.txt | subject_train.txt
 
 
 #### 2. Labelling the data set with descriptive variable names (using features.txt file)
@@ -118,8 +120,8 @@ for this project consisted in,
  - Detecting and changing capital case letters (e.g. Body to body, Acc to acc, X to x, 
    Jerk to jerk, GyroJerkMag to gyrojerkmarg, etc)
  - Detecting and removing unnecessary characters (e.g. "(", ")", "-")
- - Detecting and changing names that can cause confusion in futher steps 
-   (e.g. "meanFreq" to "mfreq")
+ - Detecting and changing names that can cause confusion in futher steps, when subsetting only
+   the mean and standard deviation measures (e.g. "meanFreq" to "mfreq")
  
 
 #### 3. Putting descriptive activity names to name the activities in the data set (using the activity_labels.txt file)
