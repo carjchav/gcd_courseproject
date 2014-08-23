@@ -2,25 +2,20 @@
 ### Average of mean and standard deviation measures, perfomed by each subject and activity in the Human Activity Recognition Using Smartphones Dataset
 ******************************************************************************************************************************************************
 
-Tidy data set:   Carlos CHAVARRÍA
+Tidy data set:   
 
-                 Getting and Cleaning Data Course Project on Coursera
+> Carlos CHAVARRÍA
+> Getting and Cleaning Data Course Project on Coursera
+> carlos.chavarria.loor@gmail.com
 
-	         carlos.chavarria.loor@gmail.com
+Original Source: 
 
-Original Source: Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, 
-
-		 Luca Oneto.
-
-   		 Smartlab - Non Linear Complex Systems Laboratory
-
-		 DITEN - Università degli Studi di Genova.
-
-		 Via Opera Pia 11A, I-16145, Genoa, Italy.
-
-		 activityrecognition@smartlab.ws
-
-		 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+> Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+> Smartlab - Non Linear Complex Systems Laboratory
+> DITEN - Università degli Studi di Genova.
+> Via Opera Pia 11A, I-16145, Genoa, Italy.
+> activityrecognition@smartlab.ws
+> (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
 
 ===========================================================================================
 
@@ -36,15 +31,13 @@ See 'Codebook.md' for more details on:
 
 #### For each record it is provided:
 ======================================
-
 - An average of mean and standard deviation measures from the original data set.
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
 
 #### This repo includes the following files:
-=========================================
-
+--------------------------------------------
 - 'README.md'
 
 - 'Codebook.md':    Describes the work performed to clean up the data, the tidy data set built,
