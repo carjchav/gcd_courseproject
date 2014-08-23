@@ -146,12 +146,12 @@ The resulted tidy data set has 68 variables (columns), 180 instances (rows), and
 
 subject (id: 1 to 30) | activity (lables) | average measures (of 66 mean/std variables)
 --------------------- | ----------------- | -------------------------------------------
-1 | Walking | 
-2 | Walking |
-3 | Walking | (a 180 x 60 numeric matrix)
-. |   ...   |
-. |   ...   |
-. |   ...   |
+1 | Walking | (a 1 x 66 numeric vector) 
+2 | Walking | (a 1 x 66 numeric vector) 
+3 | Walking | (a 1 x 66 numeric vector) 
+. |   ...   |         ...
+. |   ...   |         ...
+. |   ...   |         ...
 
 
 *********************************************************************************************
@@ -162,6 +162,7 @@ In this section, a description of the tidy data set, follows:
 
 **Table 4.** Database built from the average of mean and standard deviation measures,
              by each subject and each activity.
+
 Data Set Characteristics: | Multivariate 
 ------------------------- | ------------
 No. instances: | 180
@@ -188,7 +189,8 @@ activity | Activity of daily living performed by the subject
  |   4. Sitting (Freq: 30)
  |   5. Standing (Freq: 30)
  |   6. Laying (Freq: 30)
-For all these 66 variables: average of each measure was computed | num: min/max values specified below.
+For all these 66 variables: | num: min/max values specified below.
+average of each measure was computed |
 1. tbodyaccmeanx |                   min = 0.221,             max = 0.301
 2. tbodyaccmeany |                   min = -0.04,             max = -0.00
 3. tbodyaccmeanz |                   min = -0.15,             max = -0.07
