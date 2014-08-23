@@ -1,7 +1,8 @@
+*********************************************************************************************
 ## DATA CODEBOOK 
 ## Getting and Cleaning Data Course Project
 ### (By: Carlos CHAVARRÍA)	
-
+*********************************************************************************************
 
 *********************************************************************************************
 ### SECTION 1: DATA DESCRIPTION (taken from the features_info.txt of the original source)
@@ -96,7 +97,6 @@ features.txt (all 561 variables) | subject (id: 1 to 30) | activity (values: 1 t
 -------------------------------- | --------------------- | -------------------------
 X_test.txt | subject_test.txt | y_test.txt
 
-
 X_train.txt | subject_train.txt | y_train.txt
 
 
@@ -118,7 +118,7 @@ for this project consisted in,
  - Detecting and changing capital case letters (e.g. Body to body, Acc to acc, X to x, 
    Jerk to jerk, GyroJerkMag to gyrojerkmarg, etc)
  - Detecting and removing unnecessary characters (e.g. "(", ")", "-")
- - Detecting and changing names that can cause confusion in futher steps, when subsetting only
+ - Detecting and changing names that can cause confusion when subsetting only
    the mean and standard deviation measures (e.g. "meanFreq" to "mfreq")
  
 
@@ -147,21 +147,14 @@ picked out for each pattern. The data set obtained, resulted in a total of 68 va
 This data set has the following format:
 
 
-Table 2. Data set created after picking out the mean and 
-         standard deviation variables
-|============================================================|
-|  features.txt	    |      subject	 |      activity     |
-|(only 66 variables)|	 (id: 1 to 30)	 |      (labels ) 
-|============================================================|
-|		    |			 |		     |
-|		    |			 |		     |
-|X_test.txt	    |  subject_test.txt  |	y_test.txt   |
-|		    |			 |		     |
-|-------------------|--------------------|------------------ |
-|		    |			 |		     |
-|X_train.txt	    |  subject_train.txt |	y_train.txt  |
-|		    |			 |		     |
-|============================================================|
+**Table 2.** Data set created after picking out the mean and 
+             standard deviation variables
+
+features.txt (only 66 variables) | subject (id: 1 to 30) | activity (labels)
+-------------------------------- | --------------------- | -----------------
+X_test.txt | subject_test.txt | y_test.txt
+
+X_train.txt | subject_train.txt | y_train.txt
 
 
 
@@ -175,20 +168,17 @@ combination.
 The resulted tidy data set has 68 variables (columns), 180 instances (rows), and has
 the following format:
 
-Table 3. Tidy data set containing the average for the mean and
-	 standard deviation measures of each subject/activity
-|=================================================================|
-|   subject	 |      activity     |     average measures	  |
-| (id: 1 to 30)	 |      (labels)     | (of 66 mean/std variables) |
-|=================================================================|
-|       1      	 |       Walking     |				  |	
-|       2	 |	 Walking     |				  |
-|       3	 |	 Walking     | (a 180 x 60 numeric matrix)| 
-|	.	 |	   ...       |				  | 
-|	.	 |	   ...       |  			  |
-|	.	 |	   ...       |				  |
-|=================================================================|
+**Table 3.** Tidy data set containing the average for the mean and
+	     standard deviation measures of each subject/activity
 
+subject (id: 1 to 30) | activity (lables) | average measures (of 66 mean/std variables)
+--------------------- | ----------------- | -------------------------------------------
+1 | Walking | 
+2 | Walking |
+3 | Walking | (a 180 x 60 numeric matrix)
+. |   ...   |
+. |   ...   |
+. |   ...   |
 
 
 *********************************************************************************************
@@ -198,17 +188,14 @@ In this section, a description of the tidy data set as well as for the variables
 in, follows:
 
 
-Table 4. Database built from the average of mean and standard deviation measures
-         of the patterns described in SECTION 1, by each subject and activity.
-+==============================================================================+
-|Data Set Characteristics:  | Multivariate               | No. instances: 180  |
-|===========================|==================================================|
-|Attribute Characteristics: | See below                  | No. Attibutes:  68  |
-|===========================|==================================================|
-|Associated Tasks:	    | Merging, Cleaning up,      |		       |
-|		            | Averaging (as described in | Missing values: N/A |
-|			    | SECTION 2)		 |		       |
-+==============================================================================+
+**Table 4.** Database built from the average of mean and standard deviation measures
+             of the patterns described in SECTION 1, by each subject and activity.
+
+Data Set Characteristics: | Multivariate | No. instances: 180 
+Attribute Characteristics: | See below | No. Attibutes:  68  
+Associated Tasks: | Merging, Cleaning up, |		       
+ | Averaging (as described in | Missing values: N/A 
+ | SECTION 2) |
 
 
 Variable Names			Description
