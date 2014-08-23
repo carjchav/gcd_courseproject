@@ -1,5 +1,5 @@
 ## set the working directory
-setwd("C:/Users/CARLOS CHAVARRIA/Desktop/Coursera Courses/Getting & Cleaning Data/Course Project/UCI HAR Dataset/")
+setwd("C:/Users/CARLOS CHAVARRIA/Desktop/CourseraCourses/GettingCleaningData/CourseProject/UCI HAR Dataset/")
 
 ## Read the data in (including the features)
 subject_test <- read.table("subject_test.txt", header = FALSE, sep="")
