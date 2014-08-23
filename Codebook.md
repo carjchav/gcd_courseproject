@@ -1,5 +1,5 @@
 *********************************************************************************************
- ## DATA CODEBOOK - Getting and Cleaning Data Course Project
+##  DATA CODEBOOK - Getting and Cleaning Data Course Project
 *********************************************************************************************
 
 
@@ -189,26 +189,24 @@ in, follows:
              by each subject and each activity.
 
 Data Set Characteristics: | Multivariate | No. instances: | 180
-------------------------- | ------------ | -------------- | ---
 Attribute Characteristics: | See below | No. Attributes: | 68
--------------------------- | --------- | --------------- | --
 Associated Tasks: | Merging, Cleaning up, Averagin (as described in SECTION 2) | Missing Values: | N/A
------------------ | ---------------------------------------------------------- | --------------- | ---
 
-Variable Names			Description
-==============			===========
 
-subject				Identification of each subject performing the activity
-				int: 1, 2, 3, 4, ..., 30
+Variable Names | Description 
+-------------- | ----------- 
+subject | Identification of each subject performing the activity. 
+ | int: 1, 2, 3, 4, ..., 30
+activity | Activity of daily living performed by the subject
+ | factor (w/6 levels):
+ | 1. Walking
+ | 2. Walking Upstairs
+ | 3. Walking Downstaris
+ | 4. Sitting
+ | 5. Standing
+ | 6. Laying
 
-activity			Activity of daily living performed by the subject
-				factor (w/6 levels):
-				1. Walking
-				2. Walking Upstairs
-				3. Walking Downstaris
-				4. Sitting
-				5. Standing
-				6. Laying
+
 
 For all these 66 variables: 	num: min/max values specified below.
 ---------------------------
