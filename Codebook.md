@@ -157,17 +157,19 @@ subject (id: 1 to 30) | activity (lables) | average measures (of 66 mean/std var
 *********************************************************************************************
 ### SECTION 3: VARIABLES DESCRIPTION
 *********************************************************************************************
-In this section, a description of the tidy data set as well as for the variables contained 
-in, follows:
+In this section, a description of the tidy data set, follows:
 
 
 **Table 4.** Database built from the average of mean and standard deviation measures,
              by each subject and each activity.
 
-Data Set Characteristics: | Multivariate | No. instances: | 180
-------------------------- | ------------ | -------------- | ---
-Attribute Characteristics: | See below | No. Attributes: | 68
-Associated Tasks: | Merging, Cleaning up, Averagin (as described in SECTION 2) | Missing Values: | N/A
+Data Set Characteristics: | Multivariate 
+------------------------- | ------------
+No. instances: | 180
+Attribute Characteristics: | See Table 5 below 
+No. Attributes: | 68
+Associated Tasks: | Merging, Cleaning up, Averagin (as described in SECTION 2) 
+Missing Values: | N/A
 
 
 The variables contained in the tidy data set are the following:
@@ -181,13 +183,13 @@ subject | Identification of each subject performing the activity.
  | int: 1, 2, 3, 4, ..., 30
 activity | Activity of daily living performed by the subject
  | factor (w/6 levels):
- |   1. Walking
- |   2. Walking Upstairs
- |   3. Walking Downstaris
- |   4. Sitting
- |   5. Standing
- |   6. Laying
-For all these 66 variables: average of each measure | num: min/max values specified below.
+ |   1. Walking (Freq: 30)
+ |   2. Walking Upstairs (Freq: 30)
+ |   3. Walking Downstaris (Freq: 30)
+ |   4. Sitting (Freq: 30)
+ |   5. Standing (Freq: 30)
+ |   6. Laying (Freq: 30)
+For all these 66 variables: average of each measure was computed | num: min/max values specified below.
 1. tbodyaccmeanx |                   min = 0.221,             max = 0.301
 2. tbodyaccmeany |                   min = -0.04,             max = -0.00
 3. tbodyaccmeanz |                   min = -0.15,             max = -0.07
