@@ -1,10 +1,10 @@
-# DATA CODEBOOK 
-# HUMAN ACTIVITY RECOGNITION DATABASE
-# Getting and Cleaning Data Course Project
-# (By: Carlos CHAVARRÍA)	
+## DATA CODEBOOK 
+## HUMAN ACTIVITY RECOGNITION DATABASE
+## Getting and Cleaning Data Course Project
+## (By: Carlos CHAVARRÍA)	
 
 *********************************************************************************************
-## SECTION 1: DATA DESCRIPTION (taken from the features_info.txt of the original source)
+### SECTION 1: DATA DESCRIPTION (taken from the features_info.txt of the original source)
 *********************************************************************************************
 The features selected for this database come from the accelerometer and gyroscope 3-axial 
 raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) 
@@ -71,14 +71,14 @@ The set of variables that were estimated from these signals are:
  _Vitoria-Gasteiz, Spain. Dec 2012)_
 
 *********************************************************************************************
-## SECTION 2: WORK MADE TO CLEAN UP THE DATA
+### SECTION 2: WORK MADE TO CLEAN UP THE DATA
 *********************************************************************************************
 Based on the features collected from the accelerometers from the Samsung Galaxy S Smartphone,
 as detailed above, the following work was made to the test/training dataset for each subject
 and each activity.
 
 
-### 1. Creating one data set (using X_test/train, subject_test/train, y_test/train, and features)
+#### 1. Creating one data set (using X_test/train, subject_test/train, y_test/train, and features)
 ---------------------------------------------------------------------------------------------
 
 After setting the working directory, all the txt files were read in R (including the dataset
@@ -90,24 +90,18 @@ at this stage, resulted in 563 variables (columns) and 10299 instances (rows).
 This large data set has the following format:
 
 
-Table 1. Data set created after merging the data files.
-
-   features.txt	    |      subject	 |      activity     
- (all 561 variables)|	(id: 1 to 30)	 |  (values: 1 to 6) 
----------------------------------------------------------------
-		    |			 |		     |
-		    |			 |		     |
- X_test.txt	    |  subject_test.txt  |	y_test.txt   |
-		    |			 |		     |
-                    |                    |                   |  
-		    |			 |		     |
- X_train.txt	    |  subject_train.txt |	y_train.txt  |
- 		    |			 |		     |
-                    |                    |                   |
-                    
+**Table 1.** Data set created after merging the data files.
 
 
-### 2. Labelling the data set with descriptive variable names (using features.txt file)
+features.txt (all 561 variables) | subject (id: 1 to 30) | activity (values: 1 to 6)     
+
+---------------------------------|-----------------------|--------------------------
+ X_test.txt | subject_test.txt | y_test.txt  
+ X_train.txt | subject_train.txt | y_train.txt  
+
+
+
+#### 2. Labelling the data set with descriptive variable names (using features.txt file)
 ---------------------------------------------------------------------------------------
 
 The following points about text in data sets, were considered from first lecture on week 4 
@@ -128,7 +122,7 @@ for this project consisted in,
    (e.g. "meanFreq" to "mfreq")
  
 
-### 3. Putting descriptive activity names to name the activities in the data set (using the activity_labels.txt file)
+#### 3. Putting descriptive activity names to name the activities in the data set (using the activity_labels.txt file)
 ---------------------------------------------------------------------------------------------------------------------
 
 The following labels were used for naming the activities in the data set:
@@ -140,7 +134,7 @@ The following labels were used for naming the activities in the data set:
   - 'Laying' to label activities with the value of 6
 
 
-### 4. Picking out the mean and standard deviation variables estimated from the signals 
+#### 4. Picking out the mean and standard deviation variables estimated from the signals 
 ---------------------------------------------------------------------------------------
 
 The merged data set obtained in step 1 contains, for each pattern described in SECION 1, 
@@ -171,7 +165,7 @@ Table 2. Data set created after picking out the mean and
 
 
 
-### 5. Creating a data set with the average of each variable for each subject, activity
+#### 5. Creating a data set with the average of each variable for each subject, activity
 ----------------------------------------------------------------------------------------
 
 At this step, considering the data set illustrated in Table 2, an average measure was
@@ -198,7 +192,7 @@ Table 3. Tidy data set containing the average for the mean and
 
 
 *********************************************************************************************
-## SECTION 3: VARIABLES DESCRIPTION
+### SECTION 3: VARIABLES DESCRIPTION
 *********************************************************************************************
 In this section, a description of the tidy data set as well as for the variables contained 
 in, follows:
