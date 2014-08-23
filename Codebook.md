@@ -78,8 +78,8 @@ as detailed above, the following work was made to the test/training dataset for 
 and each activity.
 
 
-#### 1. Creating one data set (using X_test/train, subject_test/train, y_test/train, and features)
----------------------------------------------------------------------------------------------
+#### 2.1 Creating one data set (using X_test/train, subject_test/train, y_test/train, and features)
+---------------------------------------------------------------------------------------------------
 
 After setting the working directory, all the txt files were read in R (including the dataset
 for both test and training, the labels, the subjects, and the features -variables names-).
@@ -99,8 +99,8 @@ X_train.txt | subject_train.txt | y_train.txt
 
 
 
-#### 2. Labelling the data set with descriptive variable names (using features.txt file)
----------------------------------------------------------------------------------------
+#### 2.2 Labelling the data set with descriptive variable names (using features.txt file)
+-----------------------------------------------------------------------------------------
 
 The following points about text in data sets, were considered from first lecture on week 4 
 of the Getting & Cleaning Data Course:
@@ -118,10 +118,11 @@ for this project consisted in,
  - Detecting and removing unnecessary characters (e.g. "(", ")", "-")
  - Detecting and changing names that can cause confusion when subsetting only
    the mean and standard deviation measures (e.g. "meanFreq" to "mfreq")
- 
 
-#### 3. Putting descriptive activity names to name the activities in the data set (using the activity_labels.txt file)
----------------------------------------------------------------------------------------------------------------------
+
+
+#### 2.3 Putting descriptive activity names to name the activities in the data set (using the activity_labels.txt file)
+-----------------------------------------------------------------------------------------------------------------------
 
 The following labels were used for naming the activities in the data set:
   - 'Walking' to label activities with the value of 1
@@ -132,8 +133,9 @@ The following labels were used for naming the activities in the data set:
   - 'Laying' to label activities with the value of 6
 
 
-#### 4. Picking out the mean and standard deviation variables estimated from the signals 
----------------------------------------------------------------------------------------
+
+#### 2.4 Picking out the mean and standard deviation variables estimated from the signals 
+-----------------------------------------------------------------------------------------
 
 The merged data set obtained in step 1 contains, for each pattern described in SECION 1, 
 measures such as mean, standard deviation, max, min, skewness, kurtosis, and others.
@@ -155,8 +157,8 @@ X_train.txt | subject_train.txt | y_train.txt
 
 
 
-#### 5. Creating a data set with the average of each variable for each subject, activity
-----------------------------------------------------------------------------------------
+#### 2.5 Creating a data set with the average of each variable for each subject, activity
+-----------------------------------------------------------------------------------------
 
 At this step, considering the data set illustrated in Table 2, an average measure was
 obtained for the 'mean' and 'standard deviation' variables, by every subject-activity
