@@ -95,9 +95,10 @@ This large data set has the following format:
 features.txt (all 561 variables) | subject (id: 1 to 30) | activity (values: 1 to 6)
 -------------------------------- | --------------------- | -------------------------
 X_test.txt | subject_test.txt | y_test.txt
-| |
-| |
+
+
 X_train.txt | subject_train.txt | y_train.txt
+
 
 
 #### 2. Labelling the data set with descriptive variable names (using features.txt file)
