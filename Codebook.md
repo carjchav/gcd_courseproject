@@ -201,12 +201,12 @@ subject | Identification of each subject performing the activity.
  | int: 1, 2, 3, 4, ..., 30
 activity | Activity of daily living performed by the subject
  | factor (w/6 levels):
- | 1. Walking
- | 2. Walking Upstairs
- | 3. Walking Downstaris
- | 4. Sitting
- | 5. Standing
- | 6. Laying
+ |   1. Walking
+ |   2. Walking Upstairs
+ |   3. Walking Downstaris
+ |   4. Sitting
+ |   5. Standing
+ |   6. Laying
 
 
 
