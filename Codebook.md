@@ -91,7 +91,6 @@ This large data set has the following format:
 
 
 **Table 1.** Data set created after merging the data files.
-
 features.txt (all 561 variables) | subject (id: 1 to 30) | activity (values: 1 to 6)
 -------------------------------- | --------------------- | -------------------------
 X_test.txt | subject_test.txt | y_test.txt
@@ -149,7 +148,6 @@ This data set has the following format:
 
 **Table 2.** Data set created after picking out the mean and 
              standard deviation variables
-
 features.txt (only 66 variables) | subject (id: 1 to 30) | activity (labels)
 -------------------------------- | --------------------- | -----------------
 X_test.txt | subject_test.txt | y_test.txt
@@ -169,7 +167,6 @@ the following format:
 
 **Table 3.** Tidy data set containing the average for the mean and
 	     standard deviation measures of each subject/activity
-
 subject (id: 1 to 30) | activity (lables) | average measures (of 66 mean/std variables)
 --------------------- | ----------------- | -------------------------------------------
 1 | Walking | 
@@ -189,11 +186,12 @@ in, follows:
 
 **Table 4.** Database built from the average of mean and standard deviation measures,
              by each subject and each activity.
-
 Data Set Characteristics: | Multivariate | No. instances: | 180
 Attribute Characteristics: | See below | No. Attributes: | 68
 Associated Tasks: | Merging, Cleaning up, Averagin (as described in SECTION 2) | Missing Values: | N/A
 
+
+The variables contained in the tidy data set are the following:
 
 Variable Names | Description 
 -------------- | ----------- 
@@ -208,69 +206,69 @@ activity | Activity of daily living performed by the subject
  |   5. Standing
  |   6. Laying
 For all these 66 variables: | num: min/max values specified below.
- | 1. tbodyaccmeanx                   min = 0.221             max = 0.301
- | 2. tbodyaccmeany                   min = -0.04             max = -0.00
- | 3. tbodyaccmeanz                   min = -0.15             max = -0.07
- | 4. tgravityaccmeanx                min = -0.68             max = 0.974
- | 5. tgravityaccmeany                min = -0.47             max = 0.956
- | 6. tgravityaccmeanz                min = -0.49             max = 0.957
- | 7. tbodyaccjerkmeanx               min = 0.042             max = 0.130
- | 8. tbodyaccjerkmeany               min = -0.03             max = 0.056
- | 9. tbodyaccjerkmeanz               min = -0.06             max = 0.038
- | 10.tbodygyromeanx                  min = -0.20             max = 0.192
- | 11.tbodygyromeany                  min = -0.20             max = 0.027
- | 12.tbodygyromeanz                  min = -0.07             max = 0.179
- | 13.tbodygyrojerkmeanx              min = -0.15             max = -0.02
- | 14.tbodygyrojerkmeany              min = -0.07             max = -0.01
- | 15.tbodygyrojerkmeanz              min = -0.09             max = -0.00
- | 16.tbodyaccmagmean                 min = -0.98             max = 0.644
- | 17.tgravityaccmagmean              min = -0.98             max = 0.644
- | 18.tbodyaccjerkmagmean             min = -0.99             max = 0.434
- | 19.tbodygyromagmean                min = -0.98             max = 0.418
- | 20.tbodygyrojerkmagmean            min = -0.99             max = 0.087
- | 21.fbodyaccmeanx                   min = -0.99             max = 0.537
- | 22.fbodyaccmeany                   min = -0.98             max = 0.524
- | 23.fbodyaccmeanz                   min = -0.98             max = 0.280
- | 24.fbodyaccjerkmeanx               min = -0.99             max = 0.474
- | 25.fbodyaccjerkmeany               min = -0.98             max = 0.276
- | 26.fbodyaccjerkmeanz               min = -0.99             max = 0.157
- | 27.fbodygyromeanx                  min = -0.99             max = 0.474
- | 28.fbodygyromeany                  min = -0.99             max = 0.328
- | 29.fbodygyromeanz                  min = -0.98             max = 0.492
- | 30.fbodyaccmagmean                 min = -0.98             max = 0.586
- | 31.fbodybodyaccjerkmagmean         min = -0.99             max = 0.538
- | 32.fbodybodygyromagmean            min = -0.98             max = 0.203
- | 33.fbodybodygyrojerkmagmean        min = -0.99             max = 0.146
- | 34.tbodyaccstdx                    min = -0.99             max = 0.626
- | 35.tbodyaccstdy                    min = -0.99             max = 0.616
- | 36.tbodyaccstdz                    min = -0.98             max = 0.609
- | 37.tgravityaccstdx                 min = -0.99             max = -0.82
- | 38.tgravityaccstdy                 min = -0.99             max = -0.64
- | 39.tgravityaccstdz                 min = -0.99             max = -0.61
- | 40.tbodyaccjerkstdx                min = -0.99             max = 0.544
- | 41.tbodyaccjerkstdy                min = -0.98             max = 0.355
- | 42.tbodyaccjerkstdz                min = -0.99             max = 0.031
- | 43.tbodygyrostdx                   min = -0.99             max = 0.267
- | 44.tbodygyrostdy                   min = -0.99             max = 0.476
- | 45.tbodygyrostdz                   min = -0.98             max = 0.564
- | 46.tbodygyrojerkstdx               min = -0.99             max = 0.179
- | 47.tbodygyrojerkstdy               min = -0.99             max = 0.295
- | 48.tbodygyrojerkstdz               min = -0.99             max = 0.193
- | 49.tbodyaccmagstd                  min = -0.98             max = 0.428
- | 50.tgravityaccmagstd               min = -0.98             max = 0.428
- | 51.tbodyaccjerkmagstd              min = -0.99             max = 0.450
- | 52.tbodygyromagstd                 min = -0.98             max = 0.299
- | 53.tbodygyrojerkmagstd             min = -0.99             max = 0.250
- | 54.fbodyaccstdx                    min = -0.99             max = 0.658
- | 55.fbodyaccstdy                    min = -0.99             max = 0.560
- | 56.fbodyaccstdz                    min = -0.98             max = 0.687
- | 57.fbodyaccjerkstdx                min = -0.99             max = 0.476
- | 58.fbodyaccjerkstdy                min = -0.99             max = 0.349
- | 59.fbodyaccjerkstdz                min = -0.99             max = -0.00
- | 60.fbodygyrostdx                   min = -0.99             max = 0.196
- | 61.fbodygyrostdy                   min = -0.99             max = 0.646
- | 62.fbodygyrostdz                   min = -0.98             max = 0.522
- | 63.fbodyaccmagstd                  min = -0.98             max = 0.178
- | 64.fbodybodyaccjerkmagstd          min = -0.99             max = 0.316
- | 65.fbodybodygyromagstd             min = -0.98             max = 0.236
- | 66.fbodybodygyrojerkmagstd         min = -0.99             max = 0.287
+1. tbodyaccmeanx |                   min = 0.221             max = 0.301
+2. tbodyaccmeany |                   min = -0.04             max = -0.00
+3. tbodyaccmeanz |                   min = -0.15             max = -0.07
+4. tgravityaccmeanx |                min = -0.68             max = 0.974
+5. tgravityaccmeany |                min = -0.47             max = 0.956
+6. tgravityaccmeanz |                min = -0.49             max = 0.957
+7. tbodyaccjerkmeanx |               min = 0.042             max = 0.130
+8. tbodyaccjerkmeany |               min = -0.03             max = 0.056
+9. tbodyaccjerkmeanz |               min = -0.06             max = 0.038
+10.tbodygyromeanx |                  min = -0.20             max = 0.192
+11.tbodygyromeany |                  min = -0.20             max = 0.027
+12.tbodygyromeanz |                  min = -0.07             max = 0.179
+13.tbodygyrojerkmeanx |              min = -0.15             max = -0.02
+14.tbodygyrojerkmeany |              min = -0.07             max = -0.01
+15.tbodygyrojerkmeanz |              min = -0.09             max = -0.00
+16.tbodyaccmagmean |                 min = -0.98             max = 0.644
+17.tgravityaccmagmean |              min = -0.98             max = 0.644
+18.tbodyaccjerkmagmean |             min = -0.99             max = 0.434
+19.tbodygyromagmean |                min = -0.98             max = 0.418
+20.tbodygyrojerkmagmean |            min = -0.99             max = 0.087
+21.fbodyaccmeanx |                   min = -0.99             max = 0.537
+22.fbodyaccmeany |                   min = -0.98             max = 0.524
+23.fbodyaccmeanz |                   min = -0.98             max = 0.280
+24.fbodyaccjerkmeanx |               min = -0.99             max = 0.474
+25.fbodyaccjerkmeany |               min = -0.98             max = 0.276
+26.fbodyaccjerkmeanz |               min = -0.99             max = 0.157
+27.fbodygyromeanx |                  min = -0.99             max = 0.474
+28.fbodygyromeany |                  min = -0.99             max = 0.328
+29.fbodygyromeanz |                  min = -0.98             max = 0.492
+30.fbodyaccmagmean |                 min = -0.98             max = 0.586
+31.fbodybodyaccjerkmagmean |         min = -0.99             max = 0.538
+32.fbodybodygyromagmean |            min = -0.98             max = 0.203
+33.fbodybodygyrojerkmagmean |        min = -0.99             max = 0.146
+34.tbodyaccstdx |                    min = -0.99             max = 0.626
+35.tbodyaccstdy |                    min = -0.99             max = 0.616
+36.tbodyaccstdz |                    min = -0.98             max = 0.609
+37.tgravityaccstdx |                 min = -0.99             max = -0.82
+38.tgravityaccstdy |                 min = -0.99             max = -0.64
+39.tgravityaccstdz |                 min = -0.99             max = -0.61
+40.tbodyaccjerkstdx |                min = -0.99             max = 0.544
+41.tbodyaccjerkstdy |                min = -0.98             max = 0.355
+42.tbodyaccjerkstdz |                min = -0.99             max = 0.031
+43.tbodygyrostdx |                   min = -0.99             max = 0.267
+44.tbodygyrostdy |                   min = -0.99             max = 0.476
+45.tbodygyrostdz |                   min = -0.98             max = 0.564
+46.tbodygyrojerkstdx |               min = -0.99             max = 0.179
+47.tbodygyrojerkstdy |               min = -0.99             max = 0.295
+48.tbodygyrojerkstdz |               min = -0.99             max = 0.193
+49.tbodyaccmagstd |                  min = -0.98             max = 0.428
+50.tgravityaccmagstd |               min = -0.98             max = 0.428
+51.tbodyaccjerkmagstd |              min = -0.99             max = 0.450
+52.tbodygyromagstd |                 min = -0.98             max = 0.299
+53.tbodygyrojerkmagstd |             min = -0.99             max = 0.250
+54.fbodyaccstdx |                    min = -0.99             max = 0.658
+55.fbodyaccstdy |                    min = -0.99             max = 0.560
+56.fbodyaccstdz |                    min = -0.98             max = 0.687
+57.fbodyaccjerkstdx |                min = -0.99             max = 0.476
+58.fbodyaccjerkstdy |                min = -0.99             max = 0.349
+59.fbodyaccjerkstdz |                min = -0.99             max = -0.00
+60.fbodygyrostdx |                   min = -0.99             max = 0.196
+61.fbodygyrostdy |                   min = -0.99             max = 0.646
+62.fbodygyrostdz |                   min = -0.98             max = 0.522
+63.fbodyaccmagstd |                  min = -0.98             max = 0.178
+64.fbodybodyaccjerkmagstd |          min = -0.99             max = 0.316
+65.fbodybodygyromagstd |             min = -0.98             max = 0.236
+66.fbodybodygyrojerkmagstd |         min = -0.99             max = 0.287
