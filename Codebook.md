@@ -189,7 +189,7 @@ in, follows:
              by each subject and each activity.
 
 Data Set Characteristics: | Multivariate | No. instances: | 180
-------------------------- |              | -------------- | 
+------------------------- | ------------ | -------------- | ---
 Attribute Characteristics: | See below | No. Attributes: | 68
 Associated Tasks: | Merging, Cleaning up, Averagin (as described in SECTION 2) | Missing Values: | N/A
 
