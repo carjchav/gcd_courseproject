@@ -1,10 +1,10 @@
 *********************************************************************************************
-##  DATA CODEBOOK - Getting and Cleaning Data Course Project
+###  DATA CODEBOOK - Getting and Cleaning Data Course Project
 *********************************************************************************************
 
 
 *********************************************************************************************
-### SECTION 1: DATA DESCRIPTION
+#### SECTION 1: DATA DESCRIPTION
 *********************************************************************************************
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz.
 
@@ -58,12 +58,12 @@ The set of variables that were estimated from these signals are:
 _(_ **Source**: _Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly -Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012)._
 
 *********************************************************************************************
-### SECTION 2: WORK MADE TO CLEAN UP THE DATA
+#### SECTION 2: WORK MADE TO CLEAN UP THE DATA
 *********************************************************************************************
 Based on the features collected from the accelerometers from the Samsung Galaxy S Smartphone, as detailed above, the following work was made to the test/training dataset for each subject and each activity.
 
 
-#### 2.1 Creating one data set (using X_test/train, subject_test/train, y_test/train, and features)
+##### 2.1 Creating one data set (using X_test/train, subject_test/train, y_test/train, and features)
 ---------------------------------------------------------------------------------------------------
 
 After setting the working directory, all the txt files were read in R (including the dataset for both test and training, the labels, the subjects, and the features -variables names-).
@@ -82,7 +82,7 @@ X_train.txt | subject_train.txt | y_train.txt
 
 
 
-#### 2.2 Labelling the data set with descriptive variable names (using features.txt file)
+##### 2.2 Labelling the data set with descriptive variable names (using features.txt file)
 -----------------------------------------------------------------------------------------
 
 The following points about text in data sets, were considered from first lecture on week 4 of the Getting & Cleaning Data Course:
@@ -101,7 +101,7 @@ for this project consisted in,
 
 
 
-#### 2.3 Putting descriptive activity names to name the activities in the data set (using the activity_labels.txt file)
+##### 2.3 Putting descriptive activity names to name the activities in the data set (using the activity_labels.txt file)
 -----------------------------------------------------------------------------------------------------------------------
 
 The following labels were used for naming the activities in the data set:
@@ -114,7 +114,7 @@ The following labels were used for naming the activities in the data set:
 
 
 
-#### 2.4 Picking out the mean and standard deviation variables estimated from the signals 
+##### 2.4 Picking out the mean and standard deviation variables estimated from the signals 
 -----------------------------------------------------------------------------------------
 
 The merged data set obtained in step 1 contains, for each pattern described in SECION 1, measures such as mean, standard deviation, max, min, skewness, kurtosis, and others.
@@ -134,7 +134,7 @@ X_train.txt | subject_train.txt | y_train.txt
 
 
 
-#### 2.5 Creating a data set with the average of each variable for each subject, activity
+##### 2.5 Creating a data set with the average of each variable for each subject, activity
 -----------------------------------------------------------------------------------------
 
 At this step, considering the data set illustrated in Table 2, an average measure was obtained for the 'mean' and 'standard deviation' variables, by every subject-activity combination. 
@@ -155,7 +155,7 @@ subject (id: 1 to 30) | activity (lables) | average measures (of 66 mean/std var
 
 
 *********************************************************************************************
-### SECTION 3: VARIABLES DESCRIPTION
+#### SECTION 3: VARIABLES DESCRIPTION
 *********************************************************************************************
 In this section, a description of the tidy data set, follows:
 
@@ -189,8 +189,8 @@ activity | Activity of daily living performed by the subject
  |   4. Sitting (Freq: 30)
  |   5. Standing (Freq: 30)
  |   6. Laying (Freq: 30)
-For all these 66 variables: | num: min/max values specified below.
-average of each measure was computed |
+For all these 66 variables: | 
+average of each measure was computed | num: min/max values specified below.
 1. tbodyaccmeanx |                   min = 0.221,             max = 0.301
 2. tbodyaccmeany |                   min = -0.04,             max = -0.00
 3. tbodyaccmeanz |                   min = -0.15,             max = -0.07
