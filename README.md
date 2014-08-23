@@ -22,12 +22,12 @@ Original Source:
 
 > activityrecognition@smartlab.ws
 
-> (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
+> [A full description is available at the site where the data was obtained] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). 
 
 ----------------------------------------------
 The dataset was built using the 'Human Activity Recognition Using Smartphone Dataset'. Several steps where performed using R in order to get a tidy data set that averages for each subject and activity, the mean and standard deviation measures of each pattern contained in the original database.
 
-The steps perfomed entailed: 
+The steps perfomed, entailed: 
  - Merging files
  - Putting descriptive variable names
  - Labelling activities in the original data set with descriptive names
